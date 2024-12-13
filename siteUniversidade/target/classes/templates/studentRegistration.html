@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="@{/cep/{cep}(cep=${cep})}" method="post">
+    	<label for="cep">CEP:</label>
+    	<input type="text" id="cep" name="cep" required>
+    	<button type="submit">Buscar Endereço</button>
+    </form>
+</body>
+</html>

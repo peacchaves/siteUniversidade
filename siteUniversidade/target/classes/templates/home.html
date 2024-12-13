@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Registro de Estudantes</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Sistema de Registro de Estudantes</h1>
+    <p>Escolha uma opção:</p>
+    <ul>
+        <li><a th:href="@{/studentRegistration}">Registrar Novo Estudante</a></li>
+        <li><a th:href="@{/registrationList}">Listar Registros</a></li>
+    </ul>
+</body>
+</html>

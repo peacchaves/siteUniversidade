@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Review Registration</title>
+</head>
+<body>
+    <h1>Review Registration</h1>
+    <form action="@{/submitRegistration}" method="post">
+        <h2>Address Details</h2>
+        <p>CEP: <span th:text="${address.cep}"></span></p>
+        <p>Logradouro: <span th:text="${address.logradouro}"></span></p>
+        <p>Complemento: <span th:text="${address.complemento}"></span></p>
+        <p>Bairro: <span th:text="${address.bairro}"></span></p>
+        <p>Localidade: <span th:text="${address.localidade}"></span></p>
+        <p>UF: <span th:text="${address.uf}"></span></p>
+        <button type="submit">Confirm Registration</button>
+    </form>
+    <form action="@{/cancelRegistration}" method="post">
+        <button type="submit">Cancel Registration</button>
+    </form>
+</body>
+</html>
